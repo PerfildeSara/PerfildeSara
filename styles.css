@@ -1,0 +1,549 @@
+a:-webkit-any-link {
+    text-decoration: none;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*--------------------------------------------------- header ---------------------------------------------------*/
+header{
+    top: 0;
+    background-color: #07011C;
+    height: 15%;
+    width: 100%;
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #3225EE;
+    
+}
+
+header a{   
+    text-decoration: none;
+    color:#3D91F5;  
+}
+header a:hover{   
+    text-decoration: none;
+    color:aliceblue;   
+}
+
+header h3{   
+    color:#3D91F5;
+}
+
+header li{
+    padding-right: 20px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+header nav{
+    text-decoration: none;
+    width: 50%;
+    padding-right: 100px;
+}
+
+.encabezadoHeader{  
+    width: 50%;
+    text-align:left;
+    padding-left: 150px;
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+}
+
+.headerOscuro{
+    font-family: 'Balsamiq Sans';
+    color:#3D91F5;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------- main ---------------------------------------------------*/
+
+main{
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    scroll-margin-top: 1500px;
+    background-color:#07011C;
+    color:aliceblue; 
+}
+/*------ section 1 ---------------------------------------------*/
+#home{
+    padding-top: 170px;
+    scroll-margin-top: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#home h2{
+  
+    color: #B8D3F5;
+    margin: 0;
+
+
+}
+#home h1{ 
+    color: #3D91F5;
+    font-size: 70px;
+    margin: 0;
+    
+}
+
+.holaTexto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#home button{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+    background-color: #07011C;
+    border-color: #B8D3F5;
+    border-width: 1px;
+    color: #ffffff; 
+}
+
+.botonesHome{
+    display: flex;
+    justify-content:center;
+}
+#cambiarTema:hover{
+    background-color: #19D5FF;
+    color:#FFDE5A;
+}
+#botonHomeContactar:hover{
+    background-color: #070154;
+}
+
+
+
+
+.imagenSaraHome{
+    background-color:#3D91F5;
+    margin: 5%;
+    width: 50%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+
+.textoSaraHome{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+
+/*-------------------------------------section 2---------------------------------*/
+#aboutMe{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#aboutMe h2{
+    color:#3D91F5;
+    font-weight: 600;
+}
+#aboutMe h3{
+    color:aliceblue; 
+    font-weight: 300;
+}
+
+.skills{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);   
+    justify-items: center;
+}
+
+.skillsDividir{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#3D91F5;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #3D91F5;
+    background-color: #102540;
+    font-size: 80px;
+}
+
+.skillsDividir h3{
+    font-size: 17px;
+}
+
+.nombreSkill{
+    margin-top: 1px;
+    margin-bottom: 5px;
+    color:#ffffff;
+}
+
+
+/*-------------------------------------section 3---------------------------------*/
+#projects{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#projects h2{
+    color:#3D91F5;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#projects h3{
+    color:aliceblue; 
+    font-size: 20px;
+    font-weight: 300;
+}
+/*-------------------------------------section 4---------------------------------*/
+#funFacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#funFacts input{
+    margin-right: 30px;
+
+}
+#funFacts form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }*/
+
+
+#funFacts h2{
+    color:#3D91F5;
+    font-weight: 600;
+    font-size: 30px; 
+}
+#funFacts h3{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 20px; 
+}
+.seleccionFunFacts{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+ 
+}
+.seleccionFunFacts button{
+    background-color: #07011C;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: justify;
+}
+.cleanUp{
+    background-color: #07011C;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: center;
+
+}
+/*--------------------Correct/Wrong----*/
+.cualEsLaCorrecta #funFacts .true{
+    background-color: rgb(0, 0, 255, 0.2);
+  
+}
+.cualEsLaCorrecta #funFacts .false{
+   background-color: rgb(0, 0, 255, 0.5);
+}
+
+
+/*-------------------------------------Footer---------------------------------*/
+footer{
+    bottom: 0;
+    font-weight: 300;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+    
+#contactMe{
+    background-color: #07011C;
+    
+}
+#contactMe h2{
+    color:#3D91F5;
+}
+#contactMe a{
+    color: #3D91F5;
+    
+}
+
+#contactMe ul{
+    padding-right: 7px;
+    padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+}
+#contactMe li{
+    padding-right: 10px;
+    padding-left: 10px;
+ 
+}
+
+/*--------------------------------------------- <3 TEMA COLORIDO <3 -------------------------------------------------------------------------------------------*/
+.colorido *{
+    font-family: 'Silkscreen';
+}
+.colorido header{
+    border: 3px solid #07011C;
+    background-color:#ff91bb;
+    
+}
+.colorido header h3{
+    font-family: 'Silkscreen';
+    color:#FF1971;
+    
+}
+ .colorido header a{
+    font-family: 'Silkscreen';
+    text-decoration: none;
+    color:#FF1971;
+    
+ }
+.colorido   header a:hover{      
+    color:#19D5FF;
+     
+}
+/*main*/
+/*section one*/
+.colorido main{
+    background-color:  #FFDE5A;
+}
+.colorido #home button{
+    background-color: #FFDE5A;
+    border-color: #FF146A;
+    color: #ffffff;
+}
+
+.colorido #home h1{
+    font-family: 'Silkscreen';
+    color: white; 
+    font-size: 55px;
+    margin: 0px;
+}
+.colorido #home h2{
+    padding-left: 7%;
+    font-family: 'Silkscreen';
+    color: #FF146A; 
+}
+
+
+.colorido .imagenSaraHome{
+    border-style: solid;
+    border-width: 15px;
+    border-color: #07011C;
+    background-color: #8fefa8;
+    margin: 2%;
+}
+.colorido .imagenSaraHome:hover{
+  
+    background-color: #19D5FF;
+}
+.colorido .textoSaraHome{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*Section two*/
+.colorido #aboutMe h2{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    color: #FF146A;   
+}
+
+.colorido #aboutMe h3{
+    color:#4077FF;
+}
+.colorido #aboutMe .nombreSkill{
+    color:#ffffff;
+}
+.colorido .skillsDividir{
+    font-size: 80px;
+    color:#ffffff;
+    border-color: #ffffff;
+    background-color:#ff91bb;
+}
+
+
+
+/* Section three*/
+.colorido #projects{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    border-radius: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #07011C;
+    scroll-padding-top: 400px;
+    background-color: #8fefa8;
+}
+.colorido #projects h2{
+    color: #FF146A;
+
+}
+.colorido #projects h3{
+    color: #a78fef ;
+}
+/* Section four*/
+.colorido .seleccionFunFacts button{
+    background-color: #8fefa8;
+}
+.colorido .seleccionFunFacts button h3{
+    color: #ffffff;    
+}
+.colorido #cleanUp{
+    background-color: #8fefa8;
+    border-color: #3D91F5;
+}
+.colorido #cleanUp h3{
+    color: #3D91F5;
+    font-weight: 600;
+    font-size: 20px;
+}
+_____________________________________________
+.ualEsLaCorrectaColorido #funFacts .true{
+    background-color: #56FF00;
+}
+.colorido .cualEsLaCorrecta #funFacts .false{
+   background-color: #FF0900;
+}
+_____________________________________________ 
+/*footer*/
+.colorido #contactMe{
+    background-color: #4077FF;  
+    color:  #4DFF58;
+}
+.colorido #contactMe a{
+    background-color: #4077FF;  
+    color:  #4DFF58;
+}
+/*__________________________________________________________________________________________________________________________________________*/
+@media(max-width: 500px){
+    
+    
+    .encabezadoHeader{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    /*------------------------------------*/
+    #home{ 
+        padding-top: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagenSaraHome{
+        display: flex;
+        width: 350px;
+        height: 350px;
+        position: relative;
+    }
+    .imagenSaraHome img{
+        width:auto;
+        height: auto;
+        position:absolute;
+    }
+
+    /*-----------Section Two--------------*/
+    #aboutMe{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 100px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+   
+    .skillsDividir{    
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 35px;
+        font-size: 30px;
+    }
+    .skillsDividir h3{
+        padding-left: 10px;
+        font-size: 17px;
+    }
+    .colorido .skillsDividir h3{
+        font-size: 17px;
+    }
+    .colorido .skillsDividir{
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+}
+
