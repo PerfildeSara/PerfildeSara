@@ -1,47 +1,49 @@
 const paginaCompleta = document.querySelector('body'); 
 const cambiarTema = document.querySelector('#cambiarTema');
-
 const botonUnoFunFacts = document.querySelector('#botonUno');
 const botonDosFunFacts = document.querySelector('#botonDos');
 const botonTresFunFacts = document.querySelector('#botonTres');
-const botonFunFactsClean = document.querySelector('.cleanUp');
 
 cambiarTema.addEventListener('click', llenarDeColor);
 botonUnoFunFacts.addEventListener('click', activarFunFacts);
 botonDosFunFacts.addEventListener('click', activarFunFacts);
 botonTresFunFacts.addEventListener('click', activarFunFacts);
-botonFunFactsClean.addEventListener('click', limpiarFunFacts);
 
-let coloridoActivada = false;
 
+let fondoOscuro = true;
+let fondoColorido = false;
 
 function llenarDeColor(){  
     paginaCompleta.classList.toggle('colorido'); 
-    coloridoActivada = !coloridoActivada; 
-    return coloridoActivada + console.log(coloridoActivada);     
+    paginaCompleta.classList.remove('respuestaOscura','respuestaColorida');
+    fondoOscuro = !fondoOscuro; 
+    fondoColorido = !fondoColorido; 
+
+    return fondoColorido + fondoOscuro + console.log(fondoColorido, fondoOscuro);     
 }
 
 function activarFunFacts(){
-    if (coloridoActivada == true){
-        paginaCompleta.classList.add('cualEsLaCorrectaColorido');
+    if (fondoColorido == true && fondoOscuro == false){
+        paginaCompleta.classList.add('respuestaColorida');
+        console.log("click en estado colorido"); 
     }
-    if(coloridoActivada == false){
-        paginaCompleta.classList.add('cualEsLaCorrecta');
+    else if(fondoOscuro == true && fondoColorido == false){
+        paginaCompleta.classList.add('respuestaOscura');
+        console.log("click en estado oscuro"); 
     }
 }
 
+const limpiarFunFactsClean = document.querySelector('.cleanUp');
+limpiarFunFactsClean.addEventListener('click', limpiarFunFacts);
 
 function limpiarFunFacts(){
-    if (coloridoActivada == true){
-        paginaCompleta.classList.remove('cualEsLaCorrectaColorido');
-    }
-    if(coloridoActivada == false){
-        paginaCompleta.classList.remove('cualEsLaCorrecta');
-    }
+    paginaCompleta.classList.remove('respuestaOscura','respuestaColorida');
 }
-
-
 /*---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 const botones = Array.from(document.getElementById('#botonesFunFactsOpciones').children);
 
 botones.forEach(button =>{

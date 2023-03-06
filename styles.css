@@ -48,8 +48,7 @@ header ul{
 
 header nav{
     text-decoration: none;
-    width: 50%;
-    padding-right: 100px;
+    width: 50%; 
 }
 
 .encabezadoHeader{  
@@ -256,12 +255,6 @@ main{
 }
 
 
-
-/*.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }*/
-
-
 #funFacts h2{
     color:#3D91F5;
     font-weight: 600;
@@ -285,7 +278,18 @@ main{
     border-color: #ffffff;
     text-align: justify;
 }
+
+
+.seleccionFunFacts button:hover{
+    border-color: #7B57FF;
+}
+
+
+
+
+
 .cleanUp{
+    margin-top: 10px;
     background-color: #07011C;
     border-radius: 5px;
     border-style: solid;
@@ -293,13 +297,9 @@ main{
     text-align: center;
 
 }
-/*--------------------Correct/Wrong----*/
-.cualEsLaCorrecta #funFacts .true{
-    background-color: rgb(0, 0, 255, 0.2);
-  
-}
-.cualEsLaCorrecta #funFacts .false{
-   background-color: rgb(0, 0, 255, 0.5);
+.cleanUp:hover{
+        border-color: #3D91F5;
+
 }
 
 
@@ -449,38 +449,69 @@ footer{
     color: #a78fef ;
 }
 /* Section four*/
-.colorido .seleccionFunFacts button{
+.colorido #funFacts .true{
     background-color: #8fefa8;
 }
+.colorido #funFacts .false{
+    background-color: #8fefa8;
+}
+
 .colorido .seleccionFunFacts button h3{
     color: #ffffff;    
 }
-.colorido #cleanUp{
+
+.colorido .cleanUp{
+    margin-top: 10px;
     background-color: #8fefa8;
-    border-color: #3D91F5;
+    border-color: #ffffff; 
 }
-.colorido #cleanUp h3{
+.colorido #funFacts .cleanUp h3{
     color: #3D91F5;
     font-weight: 600;
     font-size: 20px;
 }
-_____________________________________________
-.ualEsLaCorrectaColorido #funFacts .true{
+.colorido .seleccionFunFacts button:hover{
+    border-color: #3D91F5;
+}
+.colorido .cleanUp:hover{
+    border-color: #0F16FF;
+}
+
+/*footer*/
+.colorido #contactMe {
+    bottom: 0;
+    border-top-color: #07011C;
+    border-style: solid;
+    border-width: 3px;
+    background-color:#0F16FF;   
+}
+
+.colorido #contactMe h2{
+    color:#FFDE5A;
+}
+
+.colorido #contactMe a{
+    color:#FFDE5A;;
+}
+
+/*--------------------Correct/Wrong----*/
+.respuestaOscura #funFacts .true{
+    background-color: rgb(0, 0, 255, 0.2);
+  
+}
+.respuestaOscura #funFacts .false{
+   background-color: rgb(0, 0, 255, 0.5);
+}
+
+/*-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+
+.respuestaColorida #funFacts .true{
     background-color: #56FF00;
 }
-.colorido .cualEsLaCorrecta #funFacts .false{
-   background-color: #FF0900;
+.respuestaColorida #funFacts .false{
+    background-color: #FF0900;
 }
-_____________________________________________ 
-/*footer*/
-.colorido #contactMe{
-    background-color: #4077FF;  
-    color:  #4DFF58;
-}
-.colorido #contactMe a{
-    background-color: #4077FF;  
-    color:  #4DFF58;
-}
+
 /*__________________________________________________________________________________________________________________________________________*/
 @media(max-width: 500px){
     
